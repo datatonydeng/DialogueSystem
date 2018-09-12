@@ -18,9 +18,9 @@ if not os.path.isdir("gobot"):
 
 """
 Step 1: Vocabulary Configurations
-- dataset_reader: configuration of dataset reader component (is responsible for data download and saving to disk);
-- dataset_iterator: configuration of dataset iterator component (is responsible for making batches (sequences) of data that will be further fed to pipe components);
-- metadata: extra info (urls for data download and telegram configuration), a list of data which should be downloaded in order for config to work;
+- dataset_reader: responsible for data download and saving to disk;
+- dataset_iterator: responsible for making batches (sequences) of data that will be further fed to pipe components;
+- metadata: extra info should be downloaded in order for config to work;
 - train: training process configuration (size of batches, number of training epochs, etc.);
 - chainer: specifies data flow (which components are run and in what order);
 """
@@ -99,9 +99,6 @@ vocab_comp_config['out'] = ['utterance_token_indices']
 vocab_config['chainer']['pipe'] = [vocab_comp_config]
 vocab_config['chainer']['out'] = ['utterance_token_indices']
 
-# model = build_model_from_config(vocab_config)
-# model(['hi'])
-
 """
 Step 4: Gobot Configurations
 """
@@ -139,7 +136,7 @@ vocab_comp_config = {
     'tokenizer': {'name': 'split_tokenizer'}
 }
 
-"""Adding vocabulary to chainer:"""
+""" Adding vocabulary to chainer """
 db_config['chainer']['pipe'] = []
 db_config['chainer']['pipe'].append(vocab_comp_config)
 
