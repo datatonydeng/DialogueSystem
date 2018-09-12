@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Anaconda3\\Lib\\site-packages\\download\\gobot_dstc2_db\\model"
+all_model_checkpoint_paths: "C:\\Anaconda3\\Lib\\site-packages\\download\\gobot_dstc2_db\\model"

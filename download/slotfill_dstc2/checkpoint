@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/mikhail/Projects/Pilot/download/slotfill_dstc2/model"
+all_model_checkpoint_paths: "/home/mikhail/Projects/Pilot/download/slotfill_dstc2/model"

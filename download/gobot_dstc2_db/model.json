@@ -1,0 +1,1 @@
+{"hidden_size": 128, "action_size": 46, "obs_size": 511, "dense_size": 64, "learning_rate": 0.002, "end_learning_rate": 0.002, "decay_steps": 1000, "decay_power": 1.0, "dropout_rate": 0.0, "l2_reg_coef": 0.0, "optimizer": "AdamOptimizer", "attention_mechanism": null}
